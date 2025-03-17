@@ -10,7 +10,6 @@ import java.util.List;
 
 import basic.vo.FileInfoVO;
 import fileupload.dao.FileInfoDaoImpl;
-import fileupload.dao.IFileInfoDao;
 import fileupload.service.FileInfoServiceImpl;
 import fileupload.service.IFileInfoService;
 
@@ -18,7 +17,6 @@ import fileupload.service.IFileInfoService;
 @WebServlet("/fileList.do")
 public class FileList extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-   
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// Service 객체 생성
 		IFileInfoService service = FileInfoServiceImpl.getInstance(FileInfoDaoImpl.getInstance());

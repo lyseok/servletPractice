@@ -10,7 +10,9 @@
 </head>
 
 <%
+	
 	// controller에서 보내온 자료를 받는다 => request객체의 getAttribute()메서드 이용
+	@SuppressWarnings("unchecked")
 	List<FileInfoVO> fileList = (List<FileInfoVO>)request.getAttribute("fileList");
 	
 %>
